@@ -1,3 +1,16 @@
 flaskdev() {
-  source "$1"/bin/activate; export FLASK_ENV=development; flask run;
+  if [ -z "$1" ]
+    then
+      source env/bin/activate;
+      echo "source -> env"
+      export FLASK_ENV=development;
+      echo "FLASK_ENV -> DEVELOPMENT"
+      flask run;
+  else
+    source "$1"/bin/activate;
+    echo "source -> $1"
+    export FLASK_ENV=development;
+    echo "FLASK_ENV -> DEVELOPMENT"
+    flask run;
+  fi
 }
