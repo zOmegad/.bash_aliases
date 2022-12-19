@@ -14,3 +14,5 @@ flaskdev() {
     flask run;
   fi
 }
+
+alias hg='history | grep'
