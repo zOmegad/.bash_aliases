@@ -16,3 +16,5 @@ flaskdev() {
 }
 
 alias hg='history | grep'
+
+alias sourceenv='source env/bin/activate'
