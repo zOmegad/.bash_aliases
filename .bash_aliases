@@ -19,4 +19,4 @@ alias hg='history | grep'
 
 alias sourceenv='source env/bin/activate'
 
-alias ll='ls -lh'
+alias ll='ls -lrta'
